@@ -1,0 +1,231 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html,body{
+	
+	width:100%;
+	height:100%;
+}
+body{
+	background:url('../images/login_background.jpg')no-repeat;
+	background-size:100% 100%;
+	position:relative;
+	font-family:"微软雅黑";
+}
+
+/* 用户登录 */
+.userLogin{
+	width: 400px;
+	height: 400px;
+	background:white;
+	border:1px solid red;
+	position:absolute;
+	bottom:200px;
+	right:200px;
+	border-left:none;
+	border-bottom:none;
+	border-right:none;
+	box-shadow:0 0 20px grey;
+	
+}
+/* 表单内容 */
+p{
+	color:#b05449;
+	margin-top:3px;
+}
+
+.userLogin1{
+	margin-bottom:10px;
+}
+.userLogin2{
+
+}
+.userLogin2_code input{
+	width: 150px;
+	height:100%;
+	border-radius:5px 0 0 5px;
+	border:1px solid #a94442;
+	font-size:16px;
+	text-indent:20px;
+
+}
+
+.code_li{
+	height:100%;
+	width: 100px;
+	border:1px solid #a94442;
+	background: #f2dede;
+	border-radius:0 5px 5px 0;
+	border-left:none;
+	text-align:center;
+}
+.code_li img{
+	margin:4px auto;
+}
+
+.code_change a:link{
+	color:#438bca;
+}
+
+.code_change a:visited{
+	color:#438bca;
+}
+
+.code_change{
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	line-height:40px;
+}
+
+.userLogin2_code{
+	display:flex;
+}
+
+.userLogin2_code li{
+	height:40px;
+}
+/* 登录按钮 */
+.submit_fina{
+	width: 100%;
+	height: 35px;
+	background:#e2454e;
+	color:white;
+	border:none;
+	border-radius:5px;
+	margin-top:5px;
+}
+.icon_li2{
+	width: 84%;
+}
+
+
+/* 底部a */
+.qa{
+	display:flex;
+	justify-content:space-between;
+	margin-top:10px;
+}
+.qa a:link{
+	color:#438bca;
+}
+
+.qa a:visited{
+	color:#438bca;
+}
+
+
+
+
+
+/* 用户注册 */
+.userInfo{
+	width: 400px;
+	height: 500px;
+	background:white;
+	border:1px solid red;
+	position:absolute;
+	bottom:200px;
+	right:200px;
+	border-left:none;
+	border-bottom:none;
+	border-right:none;
+	box-shadow:0 0 20px grey;
+}
+/* 表单内容 */
+
+.line{
+	background:#e8868b;
+	width: 5px;
+	height: 20px;
+	margin-right:10px;
+}
+.userInfo_1{
+	width: 350px;
+	height: 450px;
+	/* border:1px solid red; */
+	margin:25px auto;
+}
+
+.userInfo_first{
+	display:flex;
+	width:100%;
+	height: 40px;
+	align-items:center;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+/* 手机号码 */
+
+.userInfo_phone{
+	display:flex;
+}
+.userInfo_phone li{
+	height:40px;
+}
+
+.icon_li{
+	height:100%;
+	width: 16%;
+	border:1px solid #a94442;
+	background: #f2dede;
+	border-radius:5px 0 0 5px;
+	text-align:center;
+
+}
+
+.icon{
+	font-size:28px;	
+	color:#a94442;	
+}
+
+input{
+	width: 100%;
+	height:100%;
+	border-radius:0 5px 5px 0;
+	border:1px solid #a94442;
+	font-size:16px;
+	border-left:none;
+	text-indent:20px;
+}
+
+/* 获取二维码  */
+#codeRan{
+	width: 20%;
+	height: 40px;
+	background:#D3D3D3;
+	border:1px grey solid;
+	border-radius:5px;
+	margin-left:5px;
+	display:none;
+	color:white;
+	text-align:center;
+	line-height:40px;
+}
+.icon_code{
+	width:34%;
+}
+
+.clickCode{
+	width:50%;
+	margin-left:5px;
+
+
+}
+	
+#clickCode1{
+	width:100%;
+	height:100%;
+	border-radius:5px;
+	background:#e2454e;
+	color:white;
+	border:none;
+	text-indent:0;
+}
+
+
+/* 表单验证 */

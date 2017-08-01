@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Swiper JS -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="validation/jquery.validate.js"></script>
+    <script src="validation/additional-methods.js"></script>
+    <script src="validation/messages_zh.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+	<div class="logo">
+     <img src="images/nav-logo.png">   
+    </div>
+    <div class="userInfo">
+        <form action="login.html" onsubmit="return checkInput()">
+        <div class="userInfo_1">
+        <!-- 标题 -->
+            <div class="userInfo_first">
+                <div class="line"></div><span>用户注册</span>
+            </div> 
+
+            <!-- 填写手机号码 -->
+            <div class="userLogin1">
+                <ul class="userInfo_phone">
+                    <li class="icon_li li_tel">
+                        <i class="icon iconfont icon-icon icon-tel"></i>
+                    </li>
+                    <li class="icon_li2"><input type="text" placeholder="手机号码" id="telephone"  onblur="checkTel()"></li>
+                </ul>
+                <p id="telephone1">手机号码必须填写</p>
+            </div>  
+            
+            <!-- 填写验证码 -->
+            <div class="userLogin1">
+                <ul class="userInfo_phone">
+                    <li class="icon_li icon_c">
+                        <i class="icon iconfont icon-erweima"></i>
+                    </li>
+                    <li class="icon_code"><input type="text" id="code_val" onblur="checkCode()"></li>
+                    <li id="codeRan"></li>
+                    <li class="clickCode"><input type="button" value="获取验证码" id="clickCode1" onclick="getCode()" ></li>
+                </ul>
+                <p class="checkC">验证码为必填项</p>
+            </div> 
+            
+            <!-- 填写登录密码 -->
+             <div class="userLogin1">
+                <ul class="userInfo_phone">
+                    <li class="icon_li li_psw">
+                        <i class="icon iconfont icon-mima icon-psw1"></i>
+                    </li>
+                    <li class="icon_li2"><input type="password" placeholder="登录密码"  onblur="checkPassword()" id="password1"></li>
+                </ul>
+                <p id="password2">登录密码必须填写</p>
+            </div> 
+
+            <!-- 确认密码填写 -->
+             <div class="userLogin1">
+                <ul class="userInfo_phone">
+                    <li class="icon_li li_repsw">
+                        <i class="icon iconfont icon-mima icon-psw2"></i>
+                    </li>
+                    <li class="icon_li2"><input type="password" placeholder="确认密码" id="repassword1" onblur="checkRepassword()"></li>
+                </ul>
+                <p id="repassword2">确认密码必须填写</p>
+            </div> 
+            
+            <!-- 完成提交 -->
+            <input type="submit" class="submit_fina" value="同意协议并提交" >
+            <ul class="qa">
+                <li><a href="login.html">已注册？立即登录</a></li>
+                <li>注册即同意<a href="#">《伟达金云桥使用协议》</a></li>
+            </ul>
+
+        </div> 
+        </form>
+    </div>
+</body>
+</html>
